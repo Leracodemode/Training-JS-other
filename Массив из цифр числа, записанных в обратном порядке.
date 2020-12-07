@@ -1,0 +1,10 @@
+function arrayOfDigits(n){
+  let arr = [];
+  let lastDigit;
+  do {
+   lastDigit = n % 10;
+   arr.push(lastDigit);
+   n = (n - lastDigit) / 10;
+ } while (n > 0);
+ return arr;
+}
