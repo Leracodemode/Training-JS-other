@@ -1,0 +1,10 @@
+function evenDigits(n){
+  let arr = [];
+  let lastDigit;
+  do {
+    lastDigit = n % 10;
+    n = (n - lastDigit) / 10;
+    if (lastDigit % 2 === 0) arr.unshift(lastDigit); 
+  } while (n > 0);
+ return arr;
+}
