@@ -1,0 +1,9 @@
+function bankPercent(money, percent, period){
+  let sum = money;
+  let years = 0;
+  do {
+   sum = sum + sum * percent / 100;
+   years++;
+  } while (years < period);
+ return sum.toFixed(2);
+}  
