@@ -1,0 +1,10 @@
+function invertNumber(n){
+  let result = 0;
+  let lastDigit;
+  do {
+   lastDigit = n % 10;
+   result = result * 10 + lastDigit;
+   n = (n - lastDigit) / 10;
+  } while (n > 0);
+ return result;
+}
