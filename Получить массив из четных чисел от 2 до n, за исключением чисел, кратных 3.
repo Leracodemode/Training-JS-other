@@ -1,0 +1,9 @@
+function fillArray(n){
+  let arr = [];
+  for (let i = 2; i <= n; i+= 2) {
+   if (i % 3 === 0) {
+    continue;
+  } else arr.push(i);
+ }
+ return arr;
+}
