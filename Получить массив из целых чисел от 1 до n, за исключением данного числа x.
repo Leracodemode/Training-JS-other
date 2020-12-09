@@ -1,0 +1,9 @@
+function fillArray(n, x){
+  let arr = [];
+  for (let i = 1; i <= n; i++) {
+     if (i === x) {
+     continue;
+   } else arr.push(i);
+ }
+ return arr;
+}
