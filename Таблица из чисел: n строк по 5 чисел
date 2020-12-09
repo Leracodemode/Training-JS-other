@@ -1,0 +1,11 @@
+function numericalTable(n){
+  let str = '';
+   for (let i = 1; i <= n; i++) {
+    if (i < n) {
+    str = str + (i + ' ').repeat(4) + i + '\n';
+   } else {
+    str = str + (i + ' ').repeat(4) + i;
+   }
+ }
+ return str;
+}
