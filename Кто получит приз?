@@ -1,0 +1,11 @@
+function victoryInSwim(arr){
+  let array = [];
+  for (let i = 0; i < arr.length; i++){
+    for (let j = 0; j < arr[i].length; j++){
+     if (typeof arr[i][j] === 'number'){
+      array.push(arr[i][j]);
+     }
+    }  
+  } 
+   return Math.min(...array);
+  } 
