@@ -1,0 +1,12 @@
+function lastEvenElement(arr){
+  let result = undefined;
+  let element = 0;
+  for (let i = arr.length; i >= 0; i--){
+    if (arr[i] % 2 === 0){
+      element = arr[i];
+      result = [element, i]
+      break;
+    } 
+  }
+  return result;
+}
