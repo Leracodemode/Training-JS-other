@@ -1,0 +1,8 @@
+function fahrenheit(t1, t2){
+  let arr = [];
+  for (let i = t1; i <= t2; i++) {
+    let f = i*(9/5) +32;
+    arr.push(+f.toFixed(1));
+    }
+  return arr;
+}
