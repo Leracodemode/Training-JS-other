@@ -1,0 +1,16 @@
+function getDay(day, isLeap){
+  if (day > 366 || day <= 0 || day === 366 && isLeap === false) return "wrong day";
+  let arr = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+  if (isLeap === true) arr[1] = 29;
+  let sum = 0;
+  let i = 0;
+  while (sum < day) {
+    sum += arr[i];
+    i++;
+  } 
+  let d = day - sum + arr[i-1];
+  let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+  let month = months[i - 1];
+  return `${month}, ${d}`;
+  }
+console.log(getDay(365, false));
