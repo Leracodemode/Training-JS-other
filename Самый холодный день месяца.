@@ -16,3 +16,14 @@
 
 
 
+function theColdestDay(arr){
+  let min = arr[arr.length - 1];
+  let index = 0;
+  for (let i = arr.length - 2; i >= 0; i--) {
+    if (arr[i] < min) {
+      min = arr[i];
+      index = i + 1;
+    }
+  }
+  return `April ${index} was the coldest day of the month: it was ${min} degrees.`;
+}
